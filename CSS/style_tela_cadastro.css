@@ -1,0 +1,178 @@
+/*TELA DE LOGIN*/
+/*
+CORES:
+a04732 -> marrom
+02000b -> preto
+#edeae2 -> cor creme de fundo
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Tilt+Neon&display=swap');
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #edeae2 ; /*cor de fundo de todo o container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda > h1{ /*funciona para todos os h1's dentro dessa div "esquerda" */
+    color: #a04732 ;
+    font-family: 'Dela Gothic One';
+    font-size: 3vw;
+}
+
+.esquerda-imagem{
+    width: 35vw;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+}
+
+.direita-imagem{
+    width: 25vw;
+}
+
+.container-card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    font-family: 'Tilt Neon';
+}
+
+.container-card > h1{
+    color: #a04732 ;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 94%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #093040;
+    color: #edeae2;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; /* para tirar uma borda que é criada ao redor do input*/
+    font-family: 'Tilt Neon';
+}
+
+.texfield > label{
+    color: #FFFF;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/*.texfield > input::placeholder{
+    color: # ;
+}*/
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: #a04732 ;
+    box-shadow: 0px 10px 40px -12px #a04732;
+}
+
+
+.link-voltar{
+    color: #02000b;
+    text-decoration: none;
+}
+.link-voltar:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 950px){ /* enquanto a tela tiver uma largura de 950px, adicione os elementos */
+    .container-card{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){ /* apenas para celular e telas menores */
+    .container{
+        flex-direction: column;
+    }
+
+    .container-card {
+        width: 85%;
+        padding: 5vw;
+        height: 90%;
+    }
+
+    .container-card > h1 {
+        font-size: 5vw;
+    }
+
+    .textfield {
+        margin: 3vw 0;
+    }
+
+    .textfield > input {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+
+    .textfield > label {
+        margin-bottom: 3vw;
+        font-size: 4vw;
+    }
+
+    .btn-login {
+        padding: 2vw 0;
+        margin: 2vw 0;
+        font-size: 3vw;
+    }
+    
+    /*
+    .esquerda > h1{
+        display: none;
+    */
+}
