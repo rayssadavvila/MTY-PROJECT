@@ -1,1 +1,70 @@
 /*TELA DE LOGIN*/
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue; /*cor de fundo de todo o container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda > h1{ /*funciona para todos os h1's dentro dessa div "esquerda" */
+    color: blueviolet;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: blue;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.container-card > h1{
+    color: brown;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #093040;
+    color: aquamarine;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; /* para tirar uma borda que é criada ao redor do input*/
+}
