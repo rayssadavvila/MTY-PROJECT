@@ -1,6 +1,14 @@
 /*TELA DE LOGIN*/
+/*
+CORES:
+a04732 -> marrom
+02000b -> preto
+#edeae2 -> cor creme de fundo
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Tilt+Neon&display=swap');
 body{
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container{
@@ -22,6 +30,12 @@ body{
 
 .esquerda > h1{ /*funciona para todos os h1's dentro dessa div "esquerda" */
     color: blueviolet;
+    font-family: 'Dela Gothic One';
+    font-size: 3vw;
+}
+
+.esquerda-imagem{
+    width: 35vw;
 }
 
 .direita{
@@ -30,6 +44,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container-card{
@@ -42,6 +57,7 @@ body{
     background: blue;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    font-family: 'Tilt Neon';
 }
 
 .container-card > h1{
@@ -51,14 +67,16 @@ body{
 }
 
 .textfield{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin: 10px 0px;
 }
 
 .textfield > input{
-    width: 100%;
+    width: 94%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -67,4 +85,42 @@ body{
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none; /* para tirar uma borda que é criada ao redor do input*/
+}
+
+.texfield > label{
+    color: #FFFF;
+    margin-bottom: 10px;
+}
+
+/*.texfield > input::placeholder{
+    color: # ;
+}*/
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff80f2;
+}
+
+@media only screen and (max-width: 950px){ /* enquanto a tela tiver uma largura de 950px, adicione os elementos */
+    .container-card{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){ /* apenas para celular e telas menores */
+    .container{
+        flex-direction: column;
+    }
+    /*
+    .esquerda > h1{
+        display: none;
+    */
 }
