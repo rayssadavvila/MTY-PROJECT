@@ -48,7 +48,7 @@ body{
 }
 
 .direita-imagem{
-    width: 25vw;
+    width: 15vw;
 }
 
 .container-card{
@@ -94,6 +94,13 @@ body{
 .texfield > label{
     color: #FFFF;
     margin-bottom: 10px;
+}
+
+select{
+    background-color: #093040;
+    color: #edeae2;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 label{
