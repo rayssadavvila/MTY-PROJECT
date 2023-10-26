@@ -25,6 +25,33 @@ body{
     width: 20%;
 }
 
+.escolha-do-genero-musical{
+   display: inline-block;
+   position: relative;
+   left: 80px;
+   top: 80px;
+   font-family: 'Tilt Neon';
+}
+
+.escolha-do-genero-musical > select{
+    font-family: 'Tilt Neon';
+    border: none;
+    border-radius: 3px;
+    color: #edeae2;
+    background-color: #093040;
+    padding: 1px;
+}
+
+.logo-div{
+    display: inline-block;
+    position: relative;
+    right: 130px;
+}
+
+.logo-div img{
+    width: 250px;
+}
+
 .card{
     width: 30vw;
     height: 60vh;
@@ -91,7 +118,7 @@ body{
     flex-direction: column;
     padding: 30px 35px;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 0px 8px #00000056;
     font-family: 'Tilt Neon';
 }
 
@@ -182,6 +209,12 @@ a:hover{
     font-family: 'Tilt Neon';
     font-weight: 800;
     font-size: 15px;
+    transition: .2s;
+}
+
+.btn-descobrir:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #c3c3c3;
 }
 
 @media only screen and (max-width: 950px){ /* enquanto a tela tiver uma largura de 950px, adicione os elementos */
@@ -210,6 +243,16 @@ a:hover{
         font-size: 5vw;
     }
 
+    .texto-card{
+        padding: 2vw 0;
+        margin: 2vw 0;
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 3vw;
+    }
+
     .textfield {
         margin: 3vw 0;
     }
@@ -224,7 +267,7 @@ a:hover{
         font-size: 4vw;
     }
 
-    .btn-login {
+    .btn-descobrir {
         padding: 2vw 0;
         margin: 2vw 0;
         font-size: 3vw;
