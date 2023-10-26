@@ -125,7 +125,11 @@ label{
     box-shadow: 0px 10px 40px -12px #a04732;
     text-align: center;
     margin-bottom: 20px;
-    transition: .5s;
+}
+
+.btn-login button:hover{
+    transform: scale(1.05);
+    transition: .2s;
 }
 
 a:hover{
