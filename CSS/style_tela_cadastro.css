@@ -107,8 +107,7 @@ label{
 
 .btn-login{
     width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
+    padding: 20px 50px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -117,6 +116,8 @@ label{
     cursor: pointer;
     background-color: #a04732 ;
     box-shadow: 0px 10px 40px -12px #a04732;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
