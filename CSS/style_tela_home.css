@@ -42,6 +42,44 @@ body{
     padding: 1px;
 }
 
+.botao1-e-icone1{
+    position: relative;
+    top: 42px;
+    left: 50px;
+}
+
+.botao1-e-icone1 button{
+    font-size: 35px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    /*background-color: #65ac38;*/
+    background-color: #02000b;
+    color: #1ed760;
+}
+
+.botao1-e-icone1 button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0px 0px 8px #1ed760;
+    cursor: pointer;
+}
+
+.botao2-e-icone2{
+    position: relative;
+    bottom: 2px;
+    left: 380px;
+}
+
+.botao2-e-icone2 button{
+    font-size: 35px;
+    border: none;
+    background-color: #b0a78d;
+    color: #02000b;
+    border-radius: 5px;
+}
+
 .logo-div{
     display: inline-block;
     position: relative;
@@ -215,6 +253,7 @@ a:hover{
 .btn-descobrir:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #c3c3c3;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 950px){ /* enquanto a tela tiver uma largura de 950px, adicione os elementos */
