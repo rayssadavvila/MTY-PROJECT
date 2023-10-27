@@ -6,12 +6,19 @@ a04732 -> marrom
 #edeae2 -> cor creme de fundo
 */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Tilt+Neon&display=swap');
-body{
+
+/*GENERAL STYLE*/
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tilt Neon';
+}
+
+body{
     background-image: url("/Imagens/fundo_home.png");
+    font-family: 'Tilt Neon';
+    height: 100vh;
 }
 
 a{
@@ -19,6 +26,136 @@ a{
     text-decoration: none;
 }
 
+.flex{
+    display: flex;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 40px 4%;
+}
+
+/*-------------------------------------------------*/
+
+/*LOGO E BOTAO*/
+
+section.logo-e-botao{
+    padding: 0px 4%;
+    padding-top: 20px;
+}
+
+section.logo-e-botao .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+/*CARD*/
+
+section.card-de-musica{
+    padding: 0px 4%;
+}
+
+section.card-de-musica .flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal{
+    flex: 1;
+    margin: 5px;
+}
+
+.card{
+    width: 600px;
+    height: 500px;
+    background-color: #a04732;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Tilt Neon';
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto-card{
+    padding: 20px;
+}
+
+.flex-box{
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-spotify button{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    /*background-color: #65ac38;*/
+    background-color: #02000b;
+    color: #1ed760;
+}
+
+.icon-spotify button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0px 0px 8px #4c1c12;
+    cursor: pointer;
+}
+
+.icon-like button{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 65px;
+    border: none;
+    background-color: #111;
+    color: #edeae2;
+    border-radius: 5px;
+}
+
+.icon-like button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0px 0px 8px #4c1c12;
+    cursor: pointer;
+}
+
+ /*-----FIM CARD-----*/
+
+ /*BOTAO*/
+
+ section.botao{
+    padding: 20px 4%;
+ }
+
+ section.botao .flex{
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .btn-descobrir{
+    background-color: #b0a78d;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Tilt Neon';
+    font-weight: 800;
+    font-size: 15px;
+    transition: .2s;
+}
+
+/*-----FIM BOTAO-----*/
 .header{
     padding-inline: 16px;
     padding-top: 10px;
@@ -52,15 +189,15 @@ a{
   }
 */
 
-.container{
+/* .container{
     width: 100vw;
     height: 100vh;
-    /*background-color: #edeae2 ; /*cor de fundo de todo o container*/
+    background-color: #edeae2 ; /*cor de fundo de todo o container
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 .logo-imagem{
     position: relative;
@@ -70,9 +207,6 @@ a{
 
 .escolha-do-genero-musical{
    display: inline-block;
-   position: relative;
-   left: 110px;
-   top: 80px;
    font-family: 'Tilt Neon';
 }
 
@@ -85,20 +219,20 @@ a{
     padding: 1px;
 }
 
-.botao1-e-icone1{
+/* .botao1-e-icone1{
     position: relative;
     top: 42px;
     left: 50px;
-}
+} */
 
-.botao1-e-icone1 button{
+/* .botao1-e-icone1 button{
     font-size: 35px;
     display: flex;
     justify-content: space-between;
     position: relative;
     border: none;
     border-radius: 5px;
-    /*background-color: #65ac38;*/
+    background-color: #65ac38;
     background-color: #02000b;
     color: #1ed760;
 }
@@ -108,15 +242,15 @@ a{
     transition: .2s;
     box-shadow: 0px 0px 8px #4c1c12;
     cursor: pointer;
-}
+} */
 
-.botao2-e-icone2{
+/* .botao2-e-icone2{
     position: relative;
     bottom: 2px;
     left: 380px;
-}
+} */
 
-.botao2-e-icone2 button{
+/* .botao2-e-icone2 button{
     font-size: 35px;
     display: flex;
     justify-content: space-between;
@@ -133,7 +267,7 @@ a{
     transition: .2s;
     box-shadow: 0px 0px 8px #4c1c12;
     cursor: pointer;
-}
+} */
 
 .logo-div{
     display: inline-block;
@@ -145,34 +279,35 @@ a{
     width: 250px;
 }
 
-.card{
+/* .card{
     width: 22vw;
     height: 53vh;
     background-color: #a04732;
     border: none;
     border-radius: 20px;
     font-family: 'Tilt Neon';
-    
-}
+    position: relative;
+} */
 
 
-.container-img-card{
+/* .container-img-card{
    display:flex;
    align-items: center;
    justify-content: center;
    position: relative;
    top: 45px;
-}
+   position: absolute;
+} */
 
 #img-album{
     box-shadow: 0px 0px 12px #111;
 
 }
-.texto-card{
+/* .texto-card{
    position: relative;
    top: 40px;
    text-align: center;
-}
+} */
 
 .esquerda{
     width: 50vw;
@@ -295,18 +430,7 @@ a:hover{
     text-decoration: underline;
 }
 
-.btn-descobrir{
-    background-color: #b0a78d;
-    border: none;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    width: 15%;
-    font-family: 'Tilt Neon';
-    font-weight: 800;
-    font-size: 15px;
-    transition: .2s;
-}
+
 
 .btn-descobrir:hover{
     transform: scale(1.05);
@@ -354,9 +478,9 @@ a:hover{
     margin-left: 50px;
 }
 
-#principal{
+/* #principal{
     transition: margin-left 0.5s;
-}
+} */
 
 @media screen and(max-height: 450px){
     .menuOculto{
