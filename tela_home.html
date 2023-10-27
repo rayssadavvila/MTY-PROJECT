@@ -10,83 +10,104 @@
 </head>
 <body>
 
-    <div class="container">
+    <aside id="menuOculto" class="menuOculto">
 
-        <div class="escolha-do-genero-musical">    
-                <label for="genero-de-musica"> Escolha o gênero: <br> </label>
-                <select>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option>
-                        ROCK
-                    </option>
-                    <option>
-                        POP
-                    </option>
-                    <option>
-                        SERTANEJO
-                    </option>
-                    <option>
-                        RAP
-                    </option>
-                    <option>
-                        SAMBA
-                    </option>
-                    <option>
-                        JASS
-                    </option>
-                    <option>
-                        TRAP
-                    </option>
-                    <option>
-                        FUNK
-                    </option>
-                    <option>
-                        CLÁSSICA
-                    </option>
-                    <option>
-                        BLUES
-                    </option>
-                    <option>
-                        MPB
-                    </option>
-                    <option>
-                        PAGODE
-                    </option>
-                    <option>
-                        INDIE
-                    </option>
+        <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+        <a href="tela_home.html">Home</a>
+        <a href="tela_de_musicas_favoritas.html">Múscias Favoritas</a>
+        <a href="tela_de_creditos.html">Créditos</a>
+        <a href="index.html">Sair</a>
 
-                </select>
+
+    </aside>
+
+
+    <section id="principal">
+
+        <div class="container">
+
+            <span style="font-size: 30px; cursor: pointer;" class="icon-menu" onclick="abrirNav()">&#9776</span>
+
+            <div class="escolha-do-genero-musical">    
+                    <label for="genero-de-musica"> Escolha o gênero: <br> </label>
+                    <select>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option>
+                            ROCK
+                        </option>
+                        <option>
+                            POP
+                        </option>
+                        <option>
+                            SERTANEJO
+                        </option>
+                        <option>
+                            RAP
+                        </option>
+                        <option>
+                            SAMBA
+                        </option>
+                        <option>
+                            JASS
+                        </option>
+                        <option>
+                            TRAP
+                        </option>
+                        <option>
+                            FUNK
+                        </option>
+                        <option>
+                            CLÁSSICA
+                        </option>
+                        <option>
+                            BLUES
+                        </option>
+                        <option>
+                            MPB
+                        </option>
+                        <option>
+                            PAGODE
+                        </option>
+                        <option>
+                            INDIE
+                        </option>
+    
+                    </select>
+                </div>
+    
+            <div class="logo-div">
+                <img src="/Imagens/Logo_MTY.png" class="logo-imagem" alt="imagem-animada"> 
             </div>
-
-        <div class="logo-div">
-            <img src="/Imagens/Logo_MTY.png" class="logo-imagem" alt="imagem-animada"> 
+         
+            <div class="card">
+                <div class="container-img-card">  
+                    
+                </div>
+    
+                <div class="texto-card">  
+                    <h3>Nome do artista</h3>
+                    <h3>Nome da música</h3>
+                </div>
+    
+                <div class="botao1-e-icone1">
+                    <a href=""> <button>  <i class="bi bi-spotify"></i> </button> </a>
+                </div>
+    
+                <div class="botao2-e-icone2">
+                    <a href=""> <button>  <i class="bi bi-suit-heart"></i> </button> </a>
+                </div>
+    
+            </div>
+    
+            <button class="btn-descobrir"> DESCOBRIR OUTRA MÚSICA </button>
+            
+            </div>
+    
         </div>
-     
-        <div class="card">
-            <div class="container-img-card">  
-                
-            </div>
 
-            <div class="texto-card">  
-                <h3>Nome do artista</h3>
-                <h3>Nome da música</h3>
-            </div>
+    </section>
 
-            <div class="botao1-e-icone1">
-                <a href=""> <button>  <i class="bi bi-spotify"></i> </button> </a>
-            </div>
-
-            <div class="botao2-e-icone2">
-                <a href=""> <button>  <i class="bi bi-suit-heart"></i> </button> </a>
-            </div>
-
-        </div>
-
-        <button class="btn-descobrir"> DESCOBRIR OUTRA MÚSICA </button>
-        
-        </div>
-
-    </div>
+    <script type="text/javascript" src="Script/script.js"></script>
+    
 </body>
 </html>

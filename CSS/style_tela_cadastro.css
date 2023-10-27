@@ -112,7 +112,7 @@ label{
     color: # ;
 }*/
 
-.btn-login{
+.btn-cadastrar{
     width: 100%;
     padding: 20px 50px;
     border: none;
@@ -125,14 +125,10 @@ label{
     box-shadow: 0px 10px 40px -12px #a04732;
     text-align: center;
     margin-bottom: 20px;
+    transition: .3s;
 }
 
-.btn-login button:hover{
-    transform: scale(1.05);
-    transition: .2s;
-}
-
-a:hover{
+.btn-cadastrar:hover{
     transform: scale(1.05);
 }
 

@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tilt Neon';
 }
 
 a{
@@ -320,32 +321,55 @@ a:hover{
     cursor: pointer;
 }
 
-@media (max-width: 750px){
-    .hamburguer{
-        display: block;
-        z-index: 1;
+.icon-menu{
+    position: relative;
+    right: 750px;
+}
+
+.menuOculto{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menuOculto a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #888;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover{
+    color: #fff;
+}
+
+.btnFechar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#principal{
+    transition: margin-left 0.5s;
+}
+
+@media screen and(max-height: 450px){
+    .menuOculto{
+        padding-top: 15px;
     }
-
-    .nav-list{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #b0a78d;
-        clip-path: circle(100px at 90% - 15%);
-        transition: 1s erase-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .nav.active .nav-list{
-        clip-path: circle(100px at 90% - 15%);
-        pointer-events: all;
+    .menuOculto a{
+        font-size: 18;
     }
 }
 
