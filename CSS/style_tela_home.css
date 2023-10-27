@@ -11,6 +11,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tilt Neon';
+    background-image: url("/Imagens/fundo_home.png");
 }
 
 a{
@@ -19,7 +20,6 @@ a{
 }
 
 .header{
-    background: #b0a78d;
     padding-inline: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -51,28 +51,11 @@ a{
     background: center / cover no-repeat url("./bg.jpg");
   }
 */
-.hamburguer{
-    border: none;
-    background: none;
-    border-top: 3px solid #fff;
-    cursor: pointer;
-}
-
-.hamburguer::after, .hamburguer::before{
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
-}
 
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #edeae2 ; /*cor de fundo de todo o container*/
+    /*background-color: #edeae2 ; /*cor de fundo de todo o container*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,13 +63,15 @@ a{
 }
 
 .logo-imagem{
+    position: relative;
+    left: 20px;
     width: 20%;
 }
 
 .escolha-do-genero-musical{
    display: inline-block;
    position: relative;
-   left: 80px;
+   left: 110px;
    top: 80px;
    font-family: 'Tilt Neon';
 }
@@ -138,8 +123,8 @@ a{
     position: relative;
     right: 65px;
     border: none;
-    background-color: #b0a78d;
-    color: #02000b;
+    background-color: #111;
+    color: #edeae2;
     border-radius: 5px;
 }
 
@@ -179,6 +164,10 @@ a{
    top: 45px;
 }
 
+#img-album{
+    box-shadow: 0px 0px 12px #111;
+
+}
 .texto-card{
    position: relative;
    top: 40px;
@@ -327,7 +316,8 @@ a:hover{
 
 .icon-menu{
     position: relative;
-    right: 750px;
+    right: 900px;
+    bottom: 50px;
 }
 
 .menuOculto{

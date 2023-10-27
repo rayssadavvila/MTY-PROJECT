@@ -8,13 +8,13 @@ function fecharNav(){
     document.getElementById("principal").style.marginLeft = "0";
 }
 
-const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=pop';
+const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry';
 const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'a9c508b1f2msh025358c996d69d0p1c7adcjsn0a2e5dc98b96',
-        'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-    }
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'daf71657bbmsh47e362bf47628fap165eb9jsn8700e82c1efc',
+		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+	}
 };
 
 fetch(url, options)
@@ -33,7 +33,6 @@ fetch(url, options)
     .catch((erro) => {
         console.log("Erro: " + erro);
     })
-
 
 
 
