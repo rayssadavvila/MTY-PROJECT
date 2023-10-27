@@ -8,7 +8,7 @@ function fecharNav(){
     document.getElementById("principal").style.marginLeft = "0";
 }
 
-const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry';
+const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=pop';
 const options = {
     method: 'GET',
     headers: {
@@ -25,6 +25,10 @@ fetch(url, options)
         console.log(data);
         let img = data['tracks']['0']['album']['images']['1']['url'];
         document.getElementById("img-album").setAttribute('src', img);
+        document.getElementById("nomeArtista").innerHTML = data['tracks']['0']['artists']['0']['name'];
+        document.getElementById("nomeMusica").innerHTML = data['tracks']['0']['name'];
+
+
     })
     .catch((erro) => {
         console.log("Erro: " + erro);
