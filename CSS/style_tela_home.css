@@ -108,10 +108,11 @@ a{
 
 .botao1-e-icone1 button{
     font-size: 35px;
-    border-radius: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     border: none;
+    border-radius: 5px;
     /*background-color: #65ac38;*/
     background-color: #02000b;
     color: #1ed760;
@@ -132,6 +133,10 @@ a{
 
 .botao2-e-icone2 button{
     font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 65px;
     border: none;
     background-color: #b0a78d;
     color: #02000b;
@@ -156,23 +161,22 @@ a{
 }
 
 .card{
-    width: 30vw;
-    height: 60vh;
+    width: 22vw;
+    height: 53vh;
     background-color: #a04732;
     border: none;
     border-radius: 20px;
     font-family: 'Tilt Neon';
+    
 }
 
 
 .container-img-card{
-   width: 65%;
-   height: 50%;
-   background-color: #b0a78d;
+   display:flex;
+   align-items: center;
+   justify-content: center;
    position: relative;
-   margin: 0 auto;
-   top: 50px;
-   border-radius: 5px;
+   top: 45px;
 }
 
 .texto-card{
