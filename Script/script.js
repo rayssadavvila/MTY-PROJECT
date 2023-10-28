@@ -1,12 +1,27 @@
-function abrirNav(){
-    document.getElementById("menuOculto").style.width = "250px";
-    document.getElementById("principal").style.marginLeft = "250px";
+// function abrirNav(){
+//     document.getElementById("menuOculto").style.width = "250px";
+//     document.querySelector('.overlay').classList.add('active');
+// }
+
+// function fecharNav(){
+//     document.getElementById("menuOculto").style.width = "0";
+//     //document.getElementById("principal").style.marginLeft = "0";
+// }
+
+function abrirNav() {
+    document.getElementById("menuOculto").style.width = "250px"; // Abre o menu
+    document.querySelector(".logo-imagem").style.marginLeft = "250px"; // Desloca a imagem para a direita
+    document.querySelector(".card-de-musica").style.marginLeft = "250px";
+    document.querySelector(".botao").style.marginLeft = "250px";
 }
 
-function fecharNav(){
-    document.getElementById("menuOculto").style.width = "0";
-    document.getElementById("principal").style.marginLeft = "0";
+function fecharNav() {
+    document.getElementById("menuOculto").style.width = "0"; // Fecha o menu
+    document.querySelector(".logo-imagem").style.marginLeft = "0"; // Retorna a imagem à posição original
+    document.querySelector(".card-de-musica").style.marginLeft = "0"; 
+    document.querySelector(".botao").style.marginLeft = "0"; 
 }
+
 
 const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry';
 const options = {
