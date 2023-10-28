@@ -45,7 +45,6 @@ section{
 
 section.logo-e-botao{
     padding: 0px 4%;
-    padding-top: 20px;
 }
 
 section.logo-e-botao .flex{
@@ -70,7 +69,7 @@ section.card-de-musica .flex{
 }
 
 .card{
-    width: 600px;
+    width: 400px;
     height: 500px;
     background-color: #a04732;
     border: none;
@@ -87,18 +86,15 @@ section.card-de-musica .flex{
 }
 
 .flex-box{
-    justify-content: center;
+    display: flex;
+    justify-content:space-around;
     align-items: center;
 }
 
 .icon-spotify button{
     font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
     border: none;
     border-radius: 5px;
-    /*background-color: #65ac38;*/
     background-color: #02000b;
     color: #1ed760;
 }
@@ -112,14 +108,10 @@ section.card-de-musica .flex{
 
 .icon-like button{
     font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    right: 65px;
     border: none;
     background-color: #111;
     color: #edeae2;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .icon-like button:hover {
@@ -127,6 +119,10 @@ section.card-de-musica .flex{
     transition: .2s;
     box-shadow: 0px 0px 8px #4c1c12;
     cursor: pointer;
+}
+
+.img-card{
+    margin-top: 30px;
 }
 
  /*-----FIM CARD-----*/
