@@ -182,22 +182,6 @@ section.card-de-musica .flex{
     padding-block: 16px;
 }
 
-/*.hero {
-    height: calc(100vh - 70px);
-    background: center / cover no-repeat url("./bg.jpg");
-  }
-*/
-
-/* .container{
-    width: 100vw;
-    height: 100vh;
-    background-color: #edeae2 ; /*cor de fundo de todo o container
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
 .logo-imagem{
     position: relative;
     left: 20px;
@@ -218,56 +202,6 @@ section.card-de-musica .flex{
     padding: 1px;
 }
 
-/* .botao1-e-icone1{
-    position: relative;
-    top: 42px;
-    left: 50px;
-} */
-
-/* .botao1-e-icone1 button{
-    font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    border: none;
-    border-radius: 5px;
-    background-color: #65ac38;
-    background-color: #02000b;
-    color: #1ed760;
-}
-
-.botao1-e-icone1 button:hover {
-    transform: scale(1.05);
-    transition: .2s;
-    box-shadow: 0px 0px 8px #4c1c12;
-    cursor: pointer;
-} */
-
-/* .botao2-e-icone2{
-    position: relative;
-    bottom: 2px;
-    left: 380px;
-} */
-
-/* .botao2-e-icone2 button{
-    font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    right: 65px;
-    border: none;
-    background-color: #111;
-    color: #edeae2;
-    border-radius: 5px;
-}
-
-.botao2-e-icone2 button:hover {
-    transform: scale(1.05);
-    transition: .2s;
-    box-shadow: 0px 0px 8px #4c1c12;
-    cursor: pointer;
-} */
-
 .logo-div{
     display: inline-block;
     position: relative;
@@ -278,35 +212,10 @@ section.card-de-musica .flex{
     width: 250px;
 }
 
-/* .card{
-    width: 22vw;
-    height: 53vh;
-    background-color: #a04732;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Tilt Neon';
-    position: relative;
-} */
-
-
-/* .container-img-card{
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   top: 45px;
-   position: absolute;
-} */
-
 #img-album{
     box-shadow: 0px 0px 12px #111;
 
 }
-/* .texto-card{
-   position: relative;
-   top: 40px;
-   text-align: center;
-} */
 
 .esquerda{
     width: 50vw;
@@ -546,8 +455,4 @@ a:hover{
         font-size: 3vw;
     }
     
-    /*
-    .esquerda > h1{
-        display: none;
-    */
 }
