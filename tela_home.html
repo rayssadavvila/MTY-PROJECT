@@ -31,7 +31,7 @@
                 </div>
                 <div class="escolha-do-genero-musical">
                     <label for="genero-de-musica"> Escolha o gênero: <br> </label>
-                    <select>
+                    <select name="generos" id="generos">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="rock">
                             ROCK
@@ -48,8 +48,8 @@
                         <option value="samba">
                             SAMBA
                         </option>
-                        <option value="jass">
-                            JASS
+                        <option value="jazz">
+                            JAZZ
                         </option>
                         <option value="trap">
                             TRAP
@@ -71,6 +71,33 @@
                         </option>
                         <option value="indie">
                             INDIE
+                        </option>
+                        <option value="eletronica">
+                            ELETRÔNICA
+                        </option>
+                        <option value="reggae">
+                            REGGAE
+                        </option>
+                        <option value="gospel">
+                            GOSPEL
+                        </option>
+                        <option value="bossanova">
+                            BOSSA NOVA
+                        </option>
+                        <option value="metal">
+                            HEAVY METAL
+                        </option>
+                        <option value="classical">
+                            CLÁSSICA
+                        </option>
+                        <option value="forro">
+                            FORRÓ
+                        </option>
+                        <option value="hip-hop">
+                            HIP HOP
+                        </option>
+                        <option value="country">
+                            COUNTRY
                         </option>
                     </select>
                 </div>
@@ -112,7 +139,7 @@
         <div class="interface">
             <div class="flex">
                 <div class="btn">
-                    <button class="btn-descobrir"> DESCOBRIR OUTRA MÚSICA </button>
+                    <button class="btn-descobrir" id="botaoMusica" onclick="descobrirMusica"> DESCOBRIR OUTRA MÚSICA </button>
                 </div>
             </div>
         </div>

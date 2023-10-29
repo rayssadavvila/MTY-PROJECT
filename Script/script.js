@@ -22,32 +22,41 @@ function fecharNav() {
     document.querySelector(".botao").style.marginLeft = "0"; 
 }
 
+document.getElementById("botaoMusica").onclick = function(){descobrirMusica()};
 
-const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry{value}';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'daf71657bbmsh47e362bf47628fap165eb9jsn8700e82c1efc',
-		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-	}
-};
+function descobrirMusica(){
+    let select = document.getElementById("generos");
+    let opcao = select.options[select.selectedIndex].value;
 
-fetch(url, options)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        let img = data['tracks']['0']['album']['images']['1']['url'];
-        document.getElementById("img-album").setAttribute('src', img);
-        document.getElementById("nomeArtista").innerHTML = data['tracks']['0']['artists']['0']['name'];
-        document.getElementById("nomeMusica").innerHTML = data['tracks']['0']['name'];
+    const url = `https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_genres=${opcao}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'cb1d92a533msh76584b65bc646a5p1f0b2bjsn992ffcfa2f58',
+            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        }
+    };
+
+    fetch(url, options)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
+            let img = data['tracks']['0']['album']['images']['1']['url'];
+            document.getElementById("img-album").setAttribute('src', img);
+            document.getElementById("nomeArtista").innerHTML = data['tracks']['0']['artists']['0']['name'];
+            document.getElementById("nomeMusica").innerHTML = data['tracks']['0']['name'];
 
 
-    })
-    .catch((erro) => {
-        console.log("Erro: " + erro);
-    })
+        })
+        .catch((erro) => {
+            console.log("Erro: " + erro);
+        })
+}
+
+
+
 
 
 
