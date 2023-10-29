@@ -438,9 +438,9 @@ a:hover{
 }
 
 .icon-menu{
-    position: relative;
-    right: 550px;
-    bottom: 365px;
+    position: absolute;
+    left: 1%;
+    top: 20px;
 }
 
 .menuOculto{
