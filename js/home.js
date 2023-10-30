@@ -22,6 +22,8 @@ function fecharNav() {
     document.querySelector(".botao").style.marginLeft = "0"; 
 }
 
+//Função Descobrir música
+
 document.getElementById("botaoMusica").onclick = function(){descobrirMusica()};
 
 function descobrirMusica(){
@@ -54,6 +56,8 @@ function descobrirMusica(){
             console.log("Erro: " + erro);
         })
 }
+
+
 
 
 
