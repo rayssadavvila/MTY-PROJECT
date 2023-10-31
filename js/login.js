@@ -1,23 +1,33 @@
-const botaoLogin = document.getElementById("botaoLogin");
+Parse.initialize('TKuViPBCfqRDL7EVG8iIXGDCWZ6QwNyBCfU7PpCY', 'qHnj57oD0gzDbKkvLEM3TjgZ1Y3eic5sso2ZEupH');
+Parse.serverURL = 'https://parseapi.back4app.com/';
 
-botaoLogin.onclick = async () => {
-    let usuario = document.getElementById("")
-    try {
-      const response = await fetch(
-        "https://parseapi.back4app.com/",
-        {
-          method: "POST",
-          headers: {
-            "X-Parse-Application-Id": "vJOrDlRHl4tbH6efi7hvQanbUsKpCLYqzEIYnTvm",
-            "X-Parse-REST-API-Key": "1WA6pUj2fnbqbtGws5A10g5AK6a5L9eVGBiBkjpm",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ username: usuario }),
+document.getElementById("botaoLogin").onclick = function(){login()};
+
+async function login(){
+    const usernameEntrada = document.getElementById("usuario").value;
+    const senhaEntrada  = document.getElementById("senha").value;
+
+    const Usuario = Parse.Object.extend("Usuarios");
+    const query = new Parse.Query(Usuario);
+
+    query.equalTo("Username", usernameEntrada);
+    query.equalTo("Password", senhaEntrada);
+
+    try{
+        const usuario = await query.first();
+
+        if(usuario){
+            window.location.href = "tela_home.html";
         }
-      );
-    } catch (error) {
-      console.log("error = ", error);
+        else{
+            alert("Login ou Senha inválido!");
+        }
+    }catch (error){
+        console.error("Error: " + error.code + " " + error.message);
     }
-  };
+
+}
+
+
 
 

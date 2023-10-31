@@ -8,6 +8,7 @@
 //     //document.getElementById("principal").style.marginLeft = "0";
 // }
 
+
 function abrirNav() {
     document.getElementById("menuOculto").style.width = "250px"; // Abre o menu
     document.querySelector(".logo-imagem").style.marginLeft = "250px"; // Desloca a imagem para a direita
@@ -49,6 +50,7 @@ function descobrirMusica(){
             document.getElementById("img-album").setAttribute('src', img);
             document.getElementById("nomeArtista").innerHTML = data['tracks']['0']['artists']['0']['name'];
             document.getElementById("nomeMusica").innerHTML = data['tracks']['0']['name'];
+            document.getElementById("linkSpotify").href = data['tracks']['0']['external_urls']['spotify'];
 
 
         })

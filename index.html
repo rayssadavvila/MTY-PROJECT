@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style_tela_login.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <title> TELA DE LOGIN</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
                     <input type="password" name="senha" placeholder="Digite a sua senha" id="senha">
                 </div>
 
-                <a href="/tela_home.html">  <button class="btn-login" id="botaoLogin"> ENTRAR </button> </a>
+                <button class="btn-login" id="botaoLogin" onclick="login"> ENTRAR </button>
             
                 <div class="sessao-cadastrar">
                     <h4> Primeira vez por aqui? </h3>
@@ -39,7 +40,7 @@
         </div>
 
     </div>
-
+    
     <script type="text/javascript" src="js/login.js"></script>
 
 </body>

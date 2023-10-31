@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style_tela_cadastro.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <title> TELA DE CADASTRO </title>
 </head>
 <body>
@@ -20,78 +21,107 @@
                 <h1>CADASTRE-SE</h1>
                 <div class="textfield">
                     <label for="usuario">Nome de usuário</label>
-                    <input type="text" name="usuario" placeholder="Digite o seu nome de usuário">
+                    <input type="text" name="usuario" placeholder="Digite o seu nome de usuário" id="usuario">
                 </div>
 
                 <div class="textfield">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Digite o seu e-mail">
+                    <input type="email" name="email" placeholder="Digite o seu e-mail" id="email">
                 </div>
 
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite a sua senha">
+                    <input type="password" name="senha" placeholder="Digite a sua senha" id="senha">
                 </div>
 
                 <div class="textfield">
                     <label for="genero-de-musica"> Escolha o gênero da próxima música que você vai conhecer: </label>
-                    <select>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                       <option>
-                        ROCK
-                       </option>
-                       <option>
-                        POP
-                       </option>
-                       <option>
-                        SERTANEJO
-                       </option>
-                       <option>
-                        RAP
-                       </option>
-                       <option>
-                        SAMBA
-                       </option>
-                       <option>
-                        JASS
-                       </option>
-                       <option>
-                        TRAP
-                       </option>
-                       <option>
-                        FUNK
-                       </option>
-                       <option>
-                        CLÁSSICA
-                       </option>
-                       <option>
-                        BLUES
-                       </option>
-                       <option>
-                        MPB
-                       </option>
-                       <option>
-                        PAGODE
-                       </option>
-                       <option>
-                        INDIE
-                       </option>
-
+                    <select name="generos" id="generos">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="rock">
+                            ROCK
+                        </option>
+                        <option value="pop">
+                            POP
+                        </option>
+                        <option value="sertanejo">
+                            SERTANEJO
+                        </option>
+                        <option value="rap">
+                            RAP
+                        </option>
+                        <option value="samba">
+                            SAMBA
+                        </option>
+                        <option value="jazz">
+                            JAZZ
+                        </option>
+                        <option value="trap">
+                            TRAP
+                        </option>
+                        <option value="funk">
+                            FUNK
+                        </option>
+                        <option value="classica">
+                            CLÁSSICA
+                        </option>
+                        <option value="blues">
+                            BLUES
+                        </option>
+                        <option value="mpb">
+                            MPB
+                        </option>
+                        <option value="pagode">
+                            PAGODE
+                        </option>
+                        <option value="indie">
+                            INDIE
+                        </option>
+                        <option value="eletronica">
+                            ELETRÔNICA
+                        </option>
+                        <option value="reggae">
+                            REGGAE
+                        </option>
+                        <option value="gospel">
+                            GOSPEL
+                        </option>
+                        <option value="bossanova">
+                            BOSSA NOVA
+                        </option>
+                        <option value="metal">
+                            HEAVY METAL
+                        </option>
+                        <option value="classical">
+                            CLÁSSICA
+                        </option>
+                        <option value="forro">
+                            FORRÓ
+                        </option>
+                        <option value="hip-hop">
+                            HIP HOP
+                        </option>
+                        <option value="country">
+                            COUNTRY
+                        </option>
                     </select>
                   
                 </div>
 
 
 
-                <a href="/index.html"> <button class="btn-cadastrar"> CADASTRAR </button> </a>
+                <a href="index.html"><button class="btn-cadastrar" id="botaoCadastrar" onclick="cadastrar"> CADASTRAR </button></a>
 
 
-                    <a href="/index.html" class="link-voltar"> Voltar</a>
+                <a href="/index.html" class="link-voltar"> Voltar</a>
                 
                 
             </div>
         </div>
 
-    </div>    
+    </div>  
+    
+    <script type="text/javascript" src="js/cadastro.js"></script>
+    
 </body>
 </html>
