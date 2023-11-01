@@ -1,21 +1,21 @@
 .flex{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
 }
-.img{
-    display: inline-block;
-
-}
-.vic{
-    background-color: #edeae2;
+p{
+    text-align: center;
+    font-weight: bolder;
 }
 .milena{
     background-color: #a04732;
+    box-shadow: 0px 0px 8px #111;
+    width: 280px;
 }
-.ray{
-    background-color: #4c1c12;
+.foto-milena{
+    position: relative;
+    left: 39px;
+    top: 15px;
+    margin-bottom: 15px;
+
 }
-.caio{
-    background-color: #111;
-}
+
