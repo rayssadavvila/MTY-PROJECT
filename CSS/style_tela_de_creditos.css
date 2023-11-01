@@ -33,6 +33,10 @@ h1{
     width: 280px;
     text-decoration: none;
     color: #111;
+    transition: .5s;
+}
+.milena:hover{
+    transform: scale(1.05);
 }
 
 .foto-milena {
@@ -49,6 +53,10 @@ h1{
     width: 280px;
     text-decoration: none;
     color: #111;
+    transition: .5s;
+}
+.vic:hover{
+    transform: scale(1.05);
 }
 
 .foto-vic {
@@ -65,7 +73,12 @@ h1{
     width: 280px;
     text-decoration: none;
     color: #111;
+    transition: .5s;
 }
+.ray:hover{
+    transform: scale(1.05);
+}
+
 
 .foto-ray {
     position: relative;
@@ -81,6 +94,10 @@ h1{
     width: 280px;
     text-decoration: none;
     color: #111;
+    transition: .5s;
+}
+.caio:hover{
+    transform: scale(1.05);
 }
 
 .foto-caio {
@@ -90,4 +107,5 @@ h1{
     margin-bottom: 15px;
 
 }
+
 
