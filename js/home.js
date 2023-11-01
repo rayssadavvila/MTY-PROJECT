@@ -13,8 +13,8 @@ let url = `https://spotify23.p.rapidapi.com/recommendations/?limit=1&seed_genres
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'cb1d92a533msh76584b65bc646a5p1f0b2bjsn992ffcfa2f58',
-            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+            'X-RapidAPI-Key': '41ccb5aaa4mshaa10a72f485249fp1cc639jsn4c0a0c10cca6',
+		    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
 
@@ -63,8 +63,8 @@ function descobrirMusica(){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'cb1d92a533msh76584b65bc646a5p1f0b2bjsn992ffcfa2f58',
-            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+            'X-RapidAPI-Key': '41ccb5aaa4mshaa10a72f485249fp1cc639jsn4c0a0c10cca6',
+		    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
 
